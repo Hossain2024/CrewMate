@@ -1,0 +1,79 @@
+.card-container {
+  display: flex;
+  position: center;
+  flex-direction: row;
+  gap: 50px;
+  overflow-y: auto;
+  height: 25vh;
+  width:70vw;
+  margin-left: 30vw;
+  margin-top: 5vh; 
+   
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%; /* Makes it medium-sized */
+  background-attachment: fixed;
+  flex-direction: column; 
+  margin: 0 auto;
+  background-image: url("/src/assets/amongus.jpg");
+
+}
+
+
+
+.navigation-panel{
+  display:flex;
+  background: linear-gradient(to bottom right, #fef08a, #fdba74);
+  flex-direction: column;
+  height: 100vh;
+  width:20%;
+  position: fixed;
+  top: 0;  
+  left:0;
+ 
+  border-radius: 20px;
+}
+
+.header{
+  display: flex;
+  font-size: larger bold;
+  font-style: normal;
+  color: black ;
+  justify-content: center;
+  
+}
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+.list-container table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+/* Style the table headers */
+
+.detail-container {
+color: black;
+background-color: rgba(255, 255, 255, 0.9);
+margin-left: 30vw;
+margin-top: 10vh;
+padding: 2rem;
+width: 40vw;
+border-radius: 16px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+text-align: center;
+}
+.button{
+display: flex;
+padding: 20px;
+margin-left: 5vw;
+}
