@@ -1,7 +1,8 @@
 // Layout.jsx
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import '../App.css'
+import '../App.css'; // adjust path if needed
+
 const Layout = () => (
   <div className="app-container">
     <div className="navigation-panel">

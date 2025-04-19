@@ -1,34 +1,23 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.jsx
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Components/Layout";
+import Home from "./Components/Home";
+import CreateCrewmate from "./Components/CreateCrewmate";
+import Gallery from "./Components/Gallery";
 
 function App() {
   return (
-    <div className="app-container">
-      <h1>Welcome to Crewmate</h1>
-      <h1>Here you can create your own</h1>
-
-      <div className="main-content">
-        <div className="card-container">
-          {/* Card content will go here */}
-        </div>
-
-        <div className="list-container">
-          {/* List content will go here */}
-        </div>
-      </div>
-
-      <div className="navigation-panel">
-        <div className="header">
-          <h1>Tempo</h1>
-        </div>
-        <div className="sidebar">
-          {/* Sidebar content will go here */}
-        </div>
-      </div>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="create" element={<CreateCrewmate />} />
+          <Route path="gallery" element={<Gallery />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

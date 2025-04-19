@@ -1,12 +1,26 @@
-Hone-container{
+.Home-container{
   display: flex;
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50%; /* Makes it medium-sized */
+  background-size: 50%; 
   background-attachment: fixed;
   flex-direction: column; 
   margin: 0 auto;
   background-image: url("/src/assets/amongus.jpg");
+ }
+ 
+
+h1{
+  display: flex;
+  justify-content: center;
+  
+}
+
+p{
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+
 }
